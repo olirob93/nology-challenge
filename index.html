@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/98af6b10c5.js" crossorigin="anonymous"></script>  
+  </head>
+  <body>
+  <header id="home">
+    <nav id="overlay">      
+      <i class="fab fa-html5"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-js-square"></i>          
+      <ul>
+        <li><a href="#skills">About</a></li>
+        <li><a href="#skills-main">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-icon">
+        <img src="images/134216-48.png" alt="mobile nav icon" id="open-menu-btn">
+      </div>
+      <div id="close-icon" class="mobile-close-icon">
+        <img src="images/4280527-48.png" alt="mobile nav icon" id="close-menu-btn">
+      </div> 
+    </nav>
+    <div id="mobile-menu" class="open-menu">
+      <li class="mobile-item"><a class="mobile-link" href="#skills">About</a></li>
+      <li class="mobile-item"><a class="mobile-link" href="#skills-main">Skills</a></li>
+      <li class="mobile-item"><a class="mobile-link" href="#projects">Projects</a></li>
+      <li class="mobile-item"><a class="mobile-link" href="#contact">Contact</a></li>
+    </div> 
+    <div class="header-text">
+      <h1>Ollie Robins</h1>
+      <h2>Software Developer</h2><br><br>
+      <a href="#skills"><button type="button" name="button">About me</button></a>
+    </div>
+  </header>
+<!-- About me and Skills section-->
+
+  <section class="skills" id="skills">
+    <div class="profile-pic-cont">
+      <img class="profile-pic" src="images/profile pic.png" alt="Profile pciture of me">
+    </div>
+    <div class="banner">
+      <h1>About Me</h1>
+      <p>Having always had a keen interest in technology, paired with a passion for problem solving, I joined the
+        fascinating world of software development at the start of 2020. I enrolled on the Nology 12 week software development course in September.<br><br>
+        Take a look below to see what skills I have learnt so far. </p>
+    </div>           
+    <h1 id="skills-main">Skills</h1>
+    <div class="row">
+      <div class="container">
+        <div class="responsive">
+          <i class="fas fa-tablet-alt"></i>
+          <p>Responsive<br>Web Design</p><br><p>Mobile First</p><br><p>Clean Code</p>
+        </div>
+        <div class="cleancode">
+          <i class="fas fa-laptop-code"></i>
+            <p>Frameworks &amp;<br>PreProcessors</p><br><p>Bootstrap</p><br><p>Jquery</p><br>
+        </div>
+        <div class="lang">
+          <i class="fas fa-code"></i>
+          <p>HTML5 &amp;<br> CSS3</p><br><p>JavaScript</p><br><p>Sass &amp; Less</p>
+        </div>
+      </div>  
+    </div>  
+  </section>
+
+<!--Projects section -->
+
+  <section class="projects" id="projects">
+    <h1>Projects</h1>
+      <div class="images-1">
+        <img src="images/comingSoon.jpg" alt="Coming Soon" >
+          <p> Coming Soon</p>
+      </div>
+      <div class="images-2">
+        <img src="images/comingSoon.jpg" alt="#">
+          <p> Coming Soon</p>
+      </div>
+        <div class="images-3">
+          <img src="images/comingSoon.jpg" alt="#">
+            <p> Coming Soon</p>
+        </div>
+          <div class="images-4">
+            <img src="images/comingSoon.jpg" alt="#">
+              <p> Coming Soon</p>
+          </div>
+  </section>
+
+  <!--Contact Section-->
+
+  <section id="contact">
+    <div class="cont-header">
+      <h1>Contact</h1>
+    </div>
+    <div class="form-cont">
+      <form class="form-items" action="">
+        <input type="text" placeholder="Enter Name">
+        <input type="email" placeholder="Enter Email">
+        <textarea name="Message" id="Message" cols="30" rows="10"placeholder="Let me know how I can help"></textarea>
+        <input class="btn" type="Submit">
+      </form>
+    </div>
+    <div class="social-cont">
+      <div class="linkedin">
+        <a href="https://linkedin.com/in/ollierobins"  target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/olirob93" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="email">
+        <a href="mailto:ollierobins93@gmail.com?" subject="Contact Me" target="_blank"><i class="far fa-envelope"></i></a>
+      </div>
+    </div>    
+  </section>
+  <footer>
+    <p>Ollie Robins<br>Copyright © 2020</p>
+  </footer>
+  <script src="js/script.js"></script>
+  </body>
+</html>

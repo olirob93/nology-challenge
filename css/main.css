@@ -44,6 +44,7 @@ nav i {
 ul {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         text-align: center;
         padding-top:10px ;
         width: 100%;
@@ -74,6 +75,7 @@ nav ul li a:active {
         cursor: pointer;
         color: white;
 }
+
 
 /***** Mobile Nav *****/
 
@@ -223,6 +225,7 @@ form .btn {
 }
 
 .social-cont{
+  margin: 20px 0px;
   display: flex;  
 }
 
@@ -381,11 +384,9 @@ ul {
 /*******************************/
 @media only screen and (min-width: 740px) {
 nav {
-    height: 140px;
+    height: 100px;
   }
-nav ul {
-    padding-top: 35px;
-  }
+
 nav ul li a {
       font-size: 20px;
   }
@@ -508,7 +509,6 @@ font-size: 100px;
 
   nav ul {
       text-align: right;
-      padding-top: 25px;
       padding-right: 50px;
       }
 

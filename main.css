@@ -1,0 +1,583 @@
+* {
+        margin: 0;
+        padding: 0;
+}
+
+html {
+        color: white;
+        font-family: "Lato", "arial", sans-serif;
+        scroll-behavior: smooth;
+}
+
+
+header {
+        padding-top: 60px;
+        background-color: rgba(152, 152, 152, 0.66);
+}
+
+
+/*-----Navigation------*/
+nav {
+        display: flex;
+        height: 200px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.64);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav .mobile-nav-icon {
+  display: none;
+}
+
+nav i {
+        font-size: 75px;
+        padding-top: 35px;
+        padding-left: 20px;
+        margin-right: 50px;
+}
+
+ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        padding-top:10px ;
+        width: 100%;
+}
+
+ul li {
+        list-style: none;
+        padding: 20px;
+        text-align: center;
+}
+
+nav ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+        text-decoration: none;
+        color:white;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+        border-bottom: 3px solid orange;
+        border-top: 3px solid orange;
+        cursor: pointer;
+        color: white;
+}
+
+
+/***** Mobile Nav *****/
+
+#mobile-menu {
+  display: none;
+}
+
+#close-icon{
+  display: none;
+}
+
+
+/*--------about me & Skills section----------- */
+
+.header-text {
+  font-size: 35px;
+  text-align: center;
+  height: 900px;
+  margin-top: 100px;
+   }
+
+#skills .profile-pic-cont{
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+
+#skills .profile-pic{
+  border-radius: 50%;
+  width: 400px;  
+}
+
+button {
+  background-color: transparent;
+  border: solid white thick;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 50px;
+}
+
+button:hover {
+  background-color: rgba(226, 149, 7, 0.418);
+  border: solid white thick;
+  color: white;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.skills {
+  color: black;
+  font-size: 35px;
+  text-align: center;
+  padding: 150px 25px ;
+ }
+
+.skills .banner {
+  line-height: 50px;
+  font-size: 35px;
+}
+
+.skills div i {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: 150px;
+  color: orange;
+}
+
+#skills .container {
+  display: flex;
+  width: auto;
+}
+
+#skills .container .responsive,
+#skills .container .cleancode,
+#skills .container .lang {
+  width: 33.33%;
+}
+
+/* --------portfolio section--------*/
+#projects {
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: rgba(152, 152, 152, 0.66);
+  padding-bottom: 35px;
+  }
+
+.projects h1 {
+  font-size: 100px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.82);
+}
+
+.projects p {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.images-1,
+.images-2,
+.images-3,
+.images-4 {
+  align-items: center;
+}
+.images-1 img,
+.images-2 img,
+.images-3 img,
+.images-4 img {
+  height: 250px;
+  width: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/*--------contact---------*/
+
+#contact .cont-header {
+  display: block;
+  color: black;
+  font-size: 35px;
+  text-align: center;
+  text-shadow: 2px 2px rgba(190, 199, 195, 0.8);
+}
+.form-cont{
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 10px;
+  box-sizing: border-box;  
+  margin-top: 10px;
+}
+
+form .btn {
+  background-color: darkgreen;
+  color: #fff;
+  font-size: 40px bold;
+  
+}
+
+.social-cont{
+  margin: 20px 0px;
+  display: flex;  
+}
+
+.social-cont .linkedin,
+.social-cont .github,
+.social-cont .email {
+  width: 33.33%;
+  text-align: center;
+}
+
+#contact div i {
+  font-size: 60px;
+  color: orange;
+}
+
+#contact div i:hover {
+  color: rgba(226, 106, 68, 0.89);
+}
+
+/*-------- footer-----*/
+footer {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+/***************************/
+/*------Phone Media Query***/
+/***************************/
+@media only screen and (max-width: 730px) {
+  #projects {
+    display: block;
+  }
+nav {
+  display: flex;
+  height: auto;
+  justify-content: space-around;  
+}
+
+nav .mobile-nav-icon {
+  display: block;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.64);
+}
+.mobile-nav-icon img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.mobile-close-icon img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+}
+.mobile-close-icon{
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  display: none;
+}
+#mobile-menu {
+  display: none;
+  position: fixed;
+  top: 60px;
+  width: 100%;
+}
+
+#mobile-menu .mobile-item {
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.64);
+}
+
+#mobile-menu .mobile-item .mobile-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+ nav i {
+   font-size: 40px;
+   padding: 0px;
+   margin: 0px;
+}
+
+ul {
+    display: none;
+}
+
+.header-text {
+    font-size: 25px;
+    text-align: center;
+    height: auto;
+    margin-top: 10px;
+    padding: 30px;
+    }
+.skills .banner {
+      line-height: 50px;
+      font-size: 20px;
+}    
+#skills .profile-pic{
+      border-radius: 50%;
+      width: 250px;  
+}
+#skills h1 {
+  font-size: 50px;
+}
+
+.row {
+  font-size: 20px;
+}
+#skills .container {
+  display: block;
+  }
+  #skills .container .responsive,
+  #skills .container .cleancode,
+  #skills .container .lang {
+    width: auto;
+  }
+.skills div i {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 75px;
+    color: orange;
+  } 
+  .images-1 img,
+  .images-2 img,
+  .images-3 img,
+  .images-4 img {
+    height: 100px;
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+.projects h1 {
+    font-size: 50px; 
+  }
+#contact .cont-header h1 {
+    font-size: 50px;
+  }
+  #contact div i {
+    font-size: 30px;  
+  }
+   
+ 
+  form {
+    padding: 10px;
+  } 
+ }
+
+/*******************************/
+/*--------ipad media query-----*/
+/*******************************/
+@media only screen and (min-width: 740px) {
+nav {
+    height: 100px;
+  }
+
+nav ul li a {
+      font-size: 20px;
+  }
+
+nav i {
+    font-size: 50px;
+}  
+
+.skills div i {
+font-size: 100px;
+}
+
+.header-text {
+  height: 700px;
+  }
+
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 120px 1fr 1fr;
+  height: 950px;
+  }
+
+  .images-1 {
+    grid-column: 1/3;
+  }
+  .images-2 {
+    grid-column: 3/5;
+  }
+  .images-3 {
+    grid-column: 1/3;
+  }
+  .images-4 {
+    grid-column: 3/5;
+  }
+
+  .images-1 img,
+  .images-2 img,
+  .images-3 img,
+  .images-4 img {
+    width: 350px;
+  }
+
+.projects h1 {
+  grid-column: 1/5;
+  font-size: 65px;
+  }
+
+.projects p {
+  padding-top: 10px;
+  padding-right: 5px;
+  font-size: 30px;
+  }
+ 
+  form {
+    padding: 10px;
+  }   
+}
+/*********************************/
+/*--------laptop media query-----*/
+/*********************************/
+@media only screen and (min-width: 950px) {
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(../images/bungee.jpg) ;
+    background-size: cover;
+  }
+
+  ul {
+      text-align: right;
+      padding-right: 50px;
+      }
+  
+  nav ul li a {
+        font-size: 25px;
+        }
+  
+  .header-text{
+    font-size: 30px;
+  }      
+
+ #skills .banner{
+  font-size: 25px;
+ } 
+ #skills .profile-pic{
+  border-radius: 50%;
+  width: 200px;  
+}
+#skills .container .responsive,
+  #skills .container .cleancode,
+  #skills .container .lang {
+    font-size: 25px;
+  }
+ .projects h1 {
+  font-size: 65px;
+ } 
+
+ .projects p {
+        padding-right: 10px;
+        font-size: 40px;
+        }
+        .images-1 img,
+        .images-2 img,
+        .images-3 img,
+        .images-4 img {
+          height: 250px;
+          width: auto;
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+
+}
+
+@media only screen and (min-width: 1350px) {
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(../images/bungee.jpg) ;
+    background-size: contain, repeat(none);
+    background-position: center;
+  }
+
+  nav ul {
+      text-align: right;
+      padding-right: 50px;
+      }
+
+  nav ul li a {
+  font-size: 25px;
+  }
+  
+  .projects h1 {
+    grid-column: 1/5;
+    }
+
+  .projects .images {
+      grid-column: auto;
+      }
+
+  .projects p {
+    padding-top: 10px;
+    }
+}
+
+/*******************/
+/*** 4K Screen *****/
+/*******************/
+@media only screen and (min-width: 2400px) {
+  header{
+    height: 100vh;
+  }
+  
+.header-text {
+    height: 600px;
+    position: absolute;
+    top: 35%;
+    left: 33%;
+  }
+  .header-text p {
+    height:250px;
+  }
+
+  .images-1 img,
+  .images-2 img,
+  .images-3 img,
+  .images-4 img {
+    width: auto;
+    height: auto;
+  }
+  .projects h1 {
+    font-size: 100px;
+    padding: none;
+
+  }
+
+  .projects p {
+    font-size: 50px;
+    }
+  .form-cont{ 
+    font-size: 50px;
+  }
+
+  form input,
+  form textarea {
+    margin: 25px;
+  }
+
+  #contact div i {
+    font-size: 150px;
+    }
+
+  footer {
+    font-size: 50px;
+  }  
+
+}
